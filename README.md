@@ -20,7 +20,7 @@
 ### 👋 Hi there, I’m Kumar Mohan  
 **Senior Embedded Engineer | Real-Time Firmware | Defence & Automotive Systems**
 
-💡 I design and develop **low-level embedded firmware** that powers **mission-critical systems** — from **avionics payloads** to **automotive thermal control**.  
+💡 I design and develop **low-level embedded firmware** that powers **mission-critical systems** - from **avionics payloads** to **automotive thermal control**.  
 ⚙️ Experienced in **board bring-ups, communication stacks, and hardware–software integration**, ensuring reliable performance under demanding environments.  
 
 **🛰️ Key Contributions Across Domains:**
