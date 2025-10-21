@@ -10,8 +10,8 @@
   <a href="https://www.linkedin.com/in/kumar-mohan">
     <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin">
   </a>
-  <a href="https://github.com/kumarmaxwell">
-    <img src="https://img.shields.io/badge/GitHub-kumarmaxwell-black?style=flat-square&logo=github">
+  <a href="https://github.com/kumar-mohan-s">
+    <img src="https://img.shields.io/badge/GitHub-kumar-mohan-s-black?style=flat-square&logo=github">
   </a>
 </p>
 
@@ -48,8 +48,8 @@ Currently at **Microchip Technology**, focusing on **toolchain validation**, **C
 ### 📊 GitHub Stats
 <p align="center">
   <a href="https://github.com/kumarmaxwell">
-    <img src="https://github-stats-alpha.vercel.app/api?username=kumarmaxwell&cc=000000&tc=37BCF6&ic=fff&bc=000">
-    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=kumarmaxwell&layout=compact&langs_count=8&theme=algolia"/>
+    <img src="https://github-stats-alpha.vercel.app/api?username=kumar-mohan-s&cc=000000&tc=37BCF6&ic=fff&bc=000">
+    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=kumar-mohan-s&layout=compact&langs_count=8&theme=algolia"/>
   </a>
 </p>
 
