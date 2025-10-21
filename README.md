@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/kumarmaxwell">
-    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2500&pause=100&multiline=true&width=600&height=80&lines=Kumar+Mohan;Embedded+Software+Engineer+%7C+Defence+%7C+Automotive+Systems+%7C+SemiConductor" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2500&pause=100&multiline=true&width=650&height=80&lines=Kumar+Mohan;Embedded+Software+Engineer;Defence+%26+Aerospace+%7C+Automotive+%7C+Semiconductor+Domains" alt="Typing SVG" />
   </a>
   <br/>
 
