@@ -1,0 +1,158 @@
+\documentclass[11pt,a4paper]{article}
+%----------------------------------------------------------------------------------------
+%   PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Margins
+\usepackage{xcolor}       % For colors
+\usepackage{enumitem}     % For custom lists
+\usepackage{hyperref}     % For links
+\usepackage{helvet}       % Helvetica font
+\usepackage{calc}         % For calculating widths
+
+% Set default font to Sans-Serif
+\renewcommand{\familydefault}{\sfdefault}
+%----------------------------------------------------------------------------------------
+%   COLORS
+%----------------------------------------------------------------------------------------
+\definecolor{lightgray}{RGB}{230, 230, 230} 
+%----------------------------------------------------------------------------------------
+%   CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+% Header Name
+\newcommand{\headername}[1]{
+    \begin{center}
+        {\Huge \bfseries #1}
+    \end{center}
+}
+
+% Header Contact
+\newcommand{\headercontact}[1]{
+    \begin{center}
+        #1
+    \end{center}
+    \vspace{-1em}
+    \noindent\rule{\textwidth}{0.4pt} % Horizontal line
+    \vspace{1em}
+}
+
+% Section Label
+\newcommand{\sectionlabel}[1]{
+    \noindent 
+    \parbox[t]{2.5cm}{\textbf{#1}}%
+}
+
+% --- NEW UNIFIED GREY BLOCK COMMAND ---
+% Usage: \grayblock{Company}{Date}{Role}{Location}
+\newcommand{\grayblock}[4]{
+    \vspace{0.5em} % Space before block
+    \noindent
+    \colorbox{lightgray}{
+        \parbox{\dimexpr\linewidth-2\fboxsep}{
+            \textbf{#1} \hfill \textbf{#2} \\   % Line 1: Company & Date
+            \vspace{2pt}                        % Small gap between lines
+            {[#3]} \hfill #4                    % Line 2: [Role] & Location
+        }
+    }
+    \vspace{0.2em} % Space after block
+}
+% Custom itemize list
+\newenvironment{achievements}{
+    \begin{itemize}[leftmargin=*, label={\textbullet}, itemsep=0pt, parsep=0pt]
+}{
+    \end{itemize}
+}
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%   HEADER
+%----------------------------------------------------------------------------------------
+\headername{Kumar M}
+\headercontact{m.kumar.in@outlook.com \ | \ +91 9486505104 \ | \ linkedin.com/in/kumar-mohan \ | \ Bengaluru, India}
+%----------------------------------------------------------------------------------------
+%   SUMMARY
+%----------------------------------------------------------------------------------------
+\sectionlabel{tl;dr:} 
+\parbox[t]{\dimexpr\textwidth-2.6cm}{
+    Senior Embedded Engineer with \textbf{7 years} of experience building critical firmware for Avionics, Automotive and Semiconductor sectors. Expert in Hardware-Software co-design, silicon validation, and automating test infrastructure. Transitioning deep microcontroller knowledge into complex Embedded Linux/MPU systems.
+}
+\vspace{1em}
+%----------------------------------------------------------------------------------------
+%   SKILLS
+%----------------------------------------------------------------------------------------
+\sectionlabel{Arsenal:} 
+\parbox[t]{\dimexpr\textwidth-2.6cm}{
+    Embedded C, Python (Automation), ARM Cortex-M, RTOS (FreeRTOS), SoC Bring-up, Device Drivers, JTAG/SWD Debugging
+}
+\vspace{1em}
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE
+%----------------------------------------------------------------------------------------
+\noindent 
+\parbox[t]{2.5cm}{\textbf{Experience:}}%
+\parbox[t]{\dimexpr\textwidth-2.5cm}{
+
+    % --- Company 1 ---
+    \grayblock{Microchip Technology}{May 2024 - Present}
+              {Senior Engineer - I (SDE2), Development Tools}{Bengaluru}
+    \begin{achievements}
+        \item Developed Keil CMSIS Flash Load Modules (FLMs) for Cortex-M0+ devices.
+        \item Designed a Python and pyOCD automation suite to validate Keil and IAR Flash algorithms across \textbf{800+ Microchip Cortex-M devices}, streamlining the pre-silicon release process.
+        \item Verified new silicon parts pre-release and performed comprehensive framework testing.
+    \end{achievements}
+    \vspace{0.5em}
+
+    % --- Company 2 ---
+    \grayblock{Bosch Global Software Technologies}{1 Year 8 Months}
+              {Senior Engineer - I (SDE2), Customer Engineering - BMW}{Bengaluru}
+    \begin{achievements}
+        \item Optimized thermal management logic and improved cold-start cycles using PI loops.
+        \item Leveraged ASCET tool for modeling critical code paths and performance tuning.
+        \item Ensured ISO 26262 compliance by verifying Unit Tests (UT) and System Functional Tests (SFT).
+    \end{achievements}
+    \vspace{0.5em}
+
+    % --- Company 3 ---
+    \grayblock{Data Patterns (India) Limited}{3 Years 11 Months}
+              {Embedded Software Engineer}{Chennai}
+    \begin{achievements}
+        \item \textbf{Satellite Missions:} Engineered firmware for Onboard Telecommand \& Telemetry Transceivers for \textbf{ISRO INS-2TD} and \textbf{PIXXEL Anand} satellites.
+        \item \textbf{Avionics Systems:} Developed critical control software for \textbf{LCA Tejas 3ATI LED} backlight displays and \textbf{NPOL Sonobuoy UHF Transmitters}.
+        \item \textbf{Core Driver Development:} Built bare-metal drivers from scratch for \textbf{Reaction Wheels} and GPS integration, establishing foundational expertise in hardware interfacing.
+    \end{achievements}
+}
+\vspace{1em}
+%----------------------------------------------------------------------------------------
+%   PROJECTS & INNOVATIONS (Optional - kept from previous if you want it)
+%----------------------------------------------------------------------------------------
+\sectionlabel{Projects:} 
+\parbox[t]{\dimexpr\textwidth-2.6cm}{
+    \begin{achievements}
+        \item \textbf{PicKit 5 BLE Data Streaming:} Conceptualized a BLE-based programming tool for live streaming data.
+        \item \textbf{Hackathon Winner:} Secured 1st place in internal Hackathon for optimizing HEX file size and memory usage.
+    \end{achievements}
+}
+\vspace{1em}
+%----------------------------------------------------------------------------------------
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+\sectionlabel{Education:}
+\parbox[t]{\dimexpr\textwidth-2.6cm}{
+    \begin{achievements}
+        \item Bachelor of Engineering (Electronics \& Communication), Anna University (2018)
+        \item Class 12\textsuperscript{th}, Sunbeam Matriculation, Vellore (2014) -- 82.6\%
+        \item Class 10\textsuperscript{th}, Holy Cross Matriculation, Vellore (2012) -- 83.8\%
+    \end{achievements}
+}
+\vspace{1em}
+%----------------------------------------------------------------------------------------
+%   AWARDS & RECOGNITION
+%----------------------------------------------------------------------------------------
+\sectionlabel{Awards:}
+\parbox[t]{\dimexpr\textwidth-2.6cm}{
+    \begin{achievements}
+        \item \textbf{ISRO/URSC Recognition:} Received official accolades from URSC LEO Directors for critical contributions to the INS-2TD satellite mission.
+        \item \textbf{Safety Innovation:} Proposed Rust language support for safety-critical systems, targeting future conceptual implementation.
+    \end{achievements}
+}
+
+\end{document}
