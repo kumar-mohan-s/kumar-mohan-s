@@ -56,16 +56,16 @@
 %   PROFESSIONAL SUMMARY
 %----------------------------------------------------------------------------------------
 \resumesection{Professional Summary}
-Senior System Software Engineer with \textbf{7+ years} of experience in SoC Board Bring-ups, BSP Development and Silicon Enablement. Expert in bridging the gap between hardware and software through Post-Silicon Validation and Host-Side Automation Tooling (Python/C). Proven track record of delivering mission-critical drivers for Satellite systems and Automotive ECUs.
+Senior Embedded Software Engineer with 7+ years of experience in Low-Level Driver Development, SoC Board Bring-up and Real-Time Systems. Proven track record of delivering mission-critical firmware for Aerospace (ISRO)and Automotive (BMW) platforms. Expert in C/C++ and Python for hardware-software co-design and silicon enablement.
 
 %----------------------------------------------------------------------------------------
 %   TECHNICAL SKILLS
 %----------------------------------------------------------------------------------------
 \resumesection{Technical Skills}
 \begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=0pt]
-    \item \textbf{Languages:} Embedded C, Python, C++, Assembly, Data Structures \& Algorithms.
+    \item \textbf{Languages:} Embedded C, Python, C++(14/17), Assembly, Data Structures \& Algorithms.
     \item \textbf{Hardware:} ARM Cortex-M (M0+/M4/M7), SoC Bring-up, Hardware-Software Co-design, JTAG/SWD.
-    \item \textbf{System:} RTOS (FreeRTOS), Device Drivers (UART, SPI, I2C, GPIO, DMA), BSP, Power Management.
+    \item \textbf{System:} FreeRTOS \& Zephyr RTOS, Device Drivers (UART, SPI, I2C, GPIO, DMA), BSP, Power Management.
     \item \textbf{Tools:} Keil, IAR, GCC, pyOCD, Git, Jenkins, Oscilloscopes, Logic Analyzers.
 \end{itemize}
 
@@ -77,25 +77,46 @@ Senior System Software Engineer with \textbf{7+ years} of experience in SoC Boar
 % --- Company 1 ---
 \jobrole{Microchip Technology}{Bengaluru}{May 2024 -- Present}{Senior Engineer - I, Development Tools}
 \begin{achievements}
-    \item Architected a generic \textbf{Python Validation Framework (pyOCD) from scratch} to automate Flash Loader verification for the \textbf{entire Microchip portfolio} (Keil \& IAR). Transformed a manual, per-family testing process into a scalable pipeline, \textbf{reducing validation cycle time by 60\%}.
-    \item Delivered \textbf{Platform Enablement Firmware} (CMSIS-Pack/Flash Loaders) for multiple \textbf{ARM Cortex-M0+ families} for critical partner ecosystems (Keil MDK, IAR EWARM).
-    \item Scaled validation coverage to \textbf{800+ microcontroller variants} by deploying the custom Python framework, successfully identifying and fixing critical driver regressions before public release.
+    \item Senior developer for \textbf{PICkit 5 and ICD 5 Debugger Tools firmware}, implementing hardware-layer abstraction (HAL) in Embedded C.
+    \item Developed \textbf{CMSIS-Pack firmware} and \textbf{Flash Loaders} for ARM Cortex-M0+ families, optimizing time-to-market for Tier-1 ecosystem partners like Keil and IAR.
+    \item Architected a scalable \textbf{Silicon Enablement Framework} using Python (pyOCD) to automate the deployment and verification of \textbf{Flash Programming Algorithms} for 800+ MCU variants.
+    \item Reduced validation-to-release cycle time by \textbf{60\%} by designing a generic high-performance automated testing pipeline.
 \end{achievements}
 
 % --- Company 2 ---
 \jobrole{Bosch Global Software Technologies}{Bengaluru}{September 2022 -- May 2024}{Senior Engineer - I, Customer Engineering - BMW} 
 \begin{achievements}
-    \item Optimized thermal management and power control logic for automotive ECUs using PI loops, modeled critical paths with ASCET.
-    \item Ensured \textbf{ISO 26262 compliance} by verifying Unit Tests and System Functional Tests for safety-critical modules.
-    \item Optimized firmware memory usage for resource-constrained targets, reducing \textbf{HEX file size and RAM footprint} through custom linker script modifications (Awarded 1st Place in BU level Hackathon).
+    \item \textbf{Engineered safety-critical control logic} for automotive ECUs using PI loops, optimized thermal and power management algorithms through ASCET modeling.
+    \item Implemented firmware features in compliance with \textbf{ISO 26262} and verified system-level functional safety modules.
+    \item Optimized memory allocation via \textbf{custom linker script modifications}, reducing RAM footprint and HEX file size (Awarded 1st Place in BU Hackathon).
 \end{achievements}
 
 % --- Company 3 ---
 \jobrole{Data Patterns (India) Limited}{Chennai}{December 2018 -- September 2022}{Embedded Software Engineer}
 \begin{achievements}
-    \item Engineered \textbf{Mission-Critical Bare-Metal Firmware} for ISRO (INS-2TD) and Pixxel satellites. Delivered low-latency drivers for Telemetry (UART/I2C) and Reaction Wheels under strict timing constraints.
-    \item Led \textbf{Board Bring-up \& Schematic Verification} for Avionics hardware (LCA Tejas). Resolved \textbf{Signal Integrity} and power sequencing issues using Oscilloscopes and Logic Analyzers.
-    \item \textbf{Awarded ISRO Recognition:} Received accolades from LEO Directors for contributions to INS-2TD satellite mission.
+    \item \textbf{On-Board Computer (OBC) Design \& Bring-up:} Led the full-cycle Board Bring-up and Schematic Verification for satellite OBCs (ISRO INS-2TD and PIXXEL ANAND).
+    \item \textbf{Satellite Communication Systems:} Designed and implemented system-level firmware for \textbf{Ground Station} interfaces and \textbf{On-Board Telemetry \& Telecommand (TTC)} modules, ensuring high-reliability mission-critical data links.
+    \item Engineered mission-critical bare-metal drivers for Telemetry (UART/I2C) and Reaction Wheels for LEO satellites (Pixxel) under strict real-time timing constraints.
+    \item \textbf{Awarded ISRO Recognition:} Received accolades from LEO Directors for successful contributions to the INS-2TD satellite mission.
+\end{achievements}
+
+%----------------------------------------------------------------------------------------
+%   PROJECTS (GITHUB)
+%----------------------------------------------------------------------------------------
+\resumesection{Technical Projects}
+
+\noindent
+\textbf{ARM Cortex-M RTOS Scheduler} \hfill \href{https://github.com/kumar-mohan-s/nano-sched}{github.com/kumar-mohan-s/nano-sched}
+\begin{achievements}
+    \item Implemented a priority-based preemptive scheduler for ARM Cortex-M4 using C and Assembly.
+    \item Managed context switching by manipulating the Process Stack Pointer (PSP) and triggering PendSV interrupts for atomic task transitions.
+\end{achievements}
+
+\noindent
+\textbf{Silicon Enablement Tool (pyOCD)} \hfill \href{https://github.com/kumar-mohan-s/pydap-link}{github.com/kumar-mohan-s/pydap-link}
+\begin{achievements}
+    \item Developed a Python-based utility using pyOCD to interface with CMSIS-DAP v2 probes for automated core detection and ROM table parsing.
+    \item Automated Flash programming sequences and register-level verification for ARM-based SoC board bring-up.
 \end{achievements}
 
 %----------------------------------------------------------------------------------------
