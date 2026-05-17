@@ -1,9 +1,8 @@
 <p align="center">
   <a href="https://github.com/kumar-mohan-s">
-    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2500&pause=100&multiline=true&width=650&height=80&lines=Kumar+Mohan;Embedded+Software+Engineer;Defence+%26+Aerospace+%7C+Automotive+%7C+Semiconductor" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2500&pause=100&multiline=true&width=700&height=80&lines=Kumar+M;Senior+Embedded+Firmware+Engineer;Silicon+Bring-Up+%7C+RTOS+%7C+Validation+Automation" alt="Typing SVG" />
   </a>
   <br/>
-
   <a href="mailto:m.kumar.in@outlook.com">
     <img src="https://img.shields.io/badge/-Email-red?style=flat-square&logo=gmail&logoColor=white">
   </a>
@@ -17,41 +16,56 @@
 
 ---
 
-### 👋 Hi there, I’m Kumar Mohan  
-**Senior Embedded Engineer | Real-Time Firmware | Defence & Automotive Systems**
+### 👋 Hi, I'm Kumar M
+**Senior Embedded Firmware Engineer | Silicon Bring-Up | RTOS | Validation Automation**
 
-💡 I design and develop **low-level embedded firmware** that powers **mission-critical systems** - from **avionics payloads** to **automotive thermal control**.  
-⚙️ Experienced in **board bring-ups, communication stacks, and hardware–software integration**, ensuring reliable performance under demanding environments.  
+7+ years building firmware for mission-critical systems - from **first-silicon bring-up on ISRO satellite OBCs** to **production FreeRTOS firmware** shipped in Microchip's PICkit 5 and ICD 5 debugger tools.
 
-**🛰️ Key Contributions Across Domains:**
-- **URSC INS-2TD** — Ground Station & Onboard Computer (Telecommand/Telemetry System)  
-- **3ATI LCD Backlight System** — Flight Display Module for **LCA Tejas**  
-- **UHF Transmitter Communication Modules** — Sonobuoys for naval surveillance  
-- **Pressure Sensor Peripheral Drivers** — Tsunami & Omni Buoys  
-- **BMW S68T0 Engine Thermal Management** — Function Developer at Bosch  
-
-Currently at **Microchip Technology**, focusing on **toolchain validation** and **CMSIS pack automation** for **next-gen MCUs**.  
+I write bare-metal C that runs in orbit, RTOS firmware that ships to engineers worldwide, and Python automation frameworks that scale across hundreds of silicon variants.
 
 ---
 
-### 🧰 Technical Stack
-- **Languages:** C, Python  
-- **Architectures:** ARM Cortex-M (SAM, PIC32), Xilinx Zynq-7000  
-- **Domains:** Avionics, Automotive, Industrial, Defence  
-- **Protocols:** UART, SPI, I²C, Ethernet  
-- **Tools & IDEs:** Keil µVision, IAR, MPLAB, GCC, Jenkins  
-- **Version Control:** Git, Bitbucket  
-- **Debug & Analysis:** GDB, Oscilloscope, Logic Analyzer  
+### 🛰️ What I've Shipped
+
+| Platform | Contribution |
+|---|---|
+| **ISRO INS-2TD Satellite** | Full-cycle OBC board bring-up - power sequencing, JTAG boundary scan, TTC firmware. ISRO Recognition Award. |
+| **Pixxel ANAND LEO Satellite** | Bare-metal reaction wheel control drivers under real-time constraints |
+| **Microchip PICkit 5 / ICD 5** | Senior firmware developer - FreeRTOS architecture, HAL, BLE integration |
+| **BMW S68T0 ECU (Bosch)** | Safety-critical thermal management firmware, ISO 26262, linker optimisation |
+| **Zynq UltraScale+ ZU7EV** | FPGA bring-up, FSBL, peripheral integration - Vivado/Vitis |
 
 ---
 
-### 📊 GitHub Stats
-<p align="center">
-  <a href="https://github.com/kumar-mohan-s">
-    <img src="https://github-stats-alpha.vercel.app/api?username=kumar-mohan-s&cc=000000&tc=37BCF6&ic=fff&bc=000">
-    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=kumar-mohan-s&layout=compact&langs_count=8&theme=algolia"/>
-  </a>
-</p>
+### 🔧 Technical Stack
+
+| Category | Technologies |
+| :--- | :--- |
+| **Languages** | Embedded C • Python • C++ • ARM Thumb-2 Assembly |
+| **Architectures** | ARM Cortex-M (M0+/M4/M7) • ARM Cortex-A53 • FPGA (Zynq) |
+| **RTOS** | FreeRTOS (production) • Zephyr (Device Tree) • Bare Metal |
+| **Interfaces** | UART • SPI • I2C • PCIe • USB • DMA • BLE (RN4871) |
+| **Debug** | JTAG/SWD • pyOCD/CMSIS-DAP • Oscilloscope • Logic Analyser |
+| **Tools** | MPLAB X • Keil • IAR • GCC • Jenkins CI/CD • Vivado |
+| **Security** | Root of Trust • Secure Boot • OTP • TF-M concepts |
+
+---
+
+### 📁 Projects
+
+| Repo | What it is |
+|---|---|
+| [nano-sched](https://github.com/kumar-mohan-s/nano-sched) | Priority-based preemptive scheduler for ARM Cortex-M4 - PendSV context switch in assembly, TCB management |
+| [pydap-link](https://github.com/kumar-mohan-s/pydap-link) | pyOCD/CMSIS-DAP v2 silicon enablement tool - automated Flash validation across ARM SoC platforms |
+| [samc21-jtag-tap](https://github.com/kumar-mohan-s/samc21-jtag-tap) | Software JTAG TAP controller on ARM Cortex-M0+ - reads IDCODE from target silicon via GPIO bit-bang |
+| [edge-ml-nsnet2-cortex-m7](https://github.com/kumar-mohan-s/edge-ml-nsnet2-cortex-m7) | NSNET2 speech model (ONNX) → ARM Cortex-M7 - quantised weights, TCM/SRAM deployment |
+
+---
+
+
+### 🎤 Talks
+**AI Hardware Wars: What Embedded Engineers Need to Know** - Microchip Software Summit 2026
+Examining NVIDIA, Google TPU, Graphcore IPU, and Cerebras WSE through the lens of the AI+HW 2035 paper (LeCun, Young et al.)
 
 ---
 
@@ -61,7 +75,7 @@ Currently at **Microchip Technology**, focusing on **toolchain validation** and 
 ---
 
 ### 💬 Reach Me
-📧 [m.kumar.in@outlook.com](mailto:m.kumar.in@outlook.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/kumar-mohan/)  
+📧 [m.kumar.in@outlook.com](mailto:m.kumar.in@outlook.com)
+💼 [linkedin.com/in/kumar-mohan](https://www.linkedin.com/in/kumar-mohan)
 
 ---

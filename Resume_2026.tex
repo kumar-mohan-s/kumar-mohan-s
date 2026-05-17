@@ -1,0 +1,169 @@
+\documentclass[11pt,a4paper]{article}
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage[left=0.65in,top=0.65in,right=0.65in,bottom=0.65in]{geometry} 
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}     
+\usepackage[hidelinks]{hyperref}     
+\usepackage{helvet}       
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%----------------------------------------------------------------------------------------
+%   CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+\newcommand{\resumesection}[1]{
+    \vspace{1.2em} 
+    {\large \textbf{\uppercase{#1}}}
+    \vspace{0.2em}
+    \hrule
+    \vspace{0.6em} 
+}
+
+\newcommand{\jobrole}[4]{
+    \noindent
+    \textbf{#1} \hfill #3 \\ 
+    \textit{#4} \hfill \textit{#2}
+    \vspace{0.3em} 
+}
+
+\newenvironment{achievements}{
+    \begin{itemize}[leftmargin=1.5em, itemsep=4pt, topsep=2pt, parsep=0pt]
+}{
+    \end{itemize}
+    \vspace{0.6em} 
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   HEADER
+%----------------------------------------------------------------------------------------
+\begin{center}
+    {\Large \textbf{Kumar M}} \\ \vspace{0.4em}
+    \small{Bengaluru, India \ $\vert$ \ +91 9486505104 \ $\vert$ \
+    \href{mailto:m.kumar.in@outlook.com}{m.kumar.in@outlook.com} \ $\vert$ \
+    \href{https://www.linkedin.com/in/kumar-mohan}{linkedin.com/in/kumar-mohan} \ $\vert$ \
+    \href{https://github.com/kumar-mohan-s}{github.com/kumar-mohan-s}}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%   PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\resumesection{Professional Summary}
+Senior Embedded Systems Engineer with 7+ years of experience in firmware development, silicon bring-up and device driver engineering across aerospace, automotive and semiconductor platforms. Delivered production firmware for ISRO satellite missions and Microchip's PICkit~5/ICD~5 debugger tools. Proficient in bare-metal C, FreeRTOS, device driver development and Python-based silicon validation automation.
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+\resumesection{Technical Skills}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item \textbf{Languages:} Embedded C, Python, C++, Data Structures \& Algorithms.
+    \item \textbf{Hardware:} ARM Cortex-M (M0+/M4/M7), ARM Cortex-A53 (ZU7EV PS), FPGA (Xilinx Zynq UltraScale+ ZU7EV, ZC706), SoC Bring-up, JTAG/SWD, Oscilloscopes, Logic Analysers.
+    \item \textbf{Interfaces:} SPI, I2C, UART, PCIe, GPIO, DMA, ADC.
+    \item \textbf{OS / RTOS:} FreeRTOS (task, queue, semaphore, mutex, ISR-safe APIs), Zephyr RTOS (Device Tree), Linux (kernel modules, platform drivers, POSIX -- pthreads, IPC), Bare Metal.
+    \item \textbf{Driver Model:} Linux platform driver, ioremap/ioread32/iowrite32, devm\_* APIs, sysfs interface, module\_platform\_driver.
+    \item \textbf{Security:} Root of Trust, secure boot chain of trust, OTP and TF-M concepts.
+    \item \textbf{Tools:} pyOCD, Keil, IAR, GCC, Jenkins CI/CD, Git, Vivado, Vitis, MPLAB X.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE
+%----------------------------------------------------------------------------------------
+\resumesection{Experience}
+
+% -- Company 1 ---
+\jobrole{Microchip Technology}{Bengaluru}{May 2024 -- Present}{Senior Engineer - I, Development Tools}
+\begin{achievements}
+    \item Senior firmware developer for \textbf{PICkit~5 and ICD~5 Debugger Tools firmware} -- implemented hardware-layer abstraction (HAL) in Embedded C on a FreeRTOS architecture with priority-based preemptive scheduling and inter-task queue communication.
+    \item Developed \textbf{CMSIS-Pack firmware} and \textbf{Flash Loaders} for ARM Cortex-M0+ families, enabling Tier-1 ecosystem partners (Keil, IAR) with validated silicon bring-up artifacts.
+    \item Architected a scalable \textbf{Silicon Enablement Framework} using Python (pyOCD/CMSIS-DAP v2) to automate deployment and register-level verification of Flash Programming Algorithms across \textbf{800+ MCU variants}.
+    \item Reduced validation-to-release cycle time by \textbf{60\%} through a generic high-performance automated testing pipeline integrated with Jenkins CI/CD.
+    \item Designed structured test plans covering power-on sequencing, register-level verification and JTAG/SWD debug validation -- directly mirroring first-silicon bring-up methodology.
+\end{achievements}
+
+% -- Company 2 ---
+\jobrole{Bosch Global Software Technologies}{Bengaluru}{September 2022 -- May 2024}{Senior Engineer - I, Customer Engineering - BMW} 
+\begin{achievements}
+    \item Engineered \textbf{safety-critical ECU firmware} for BMW automotive platforms -- PI control loops, real-time thermal and power management, ISO~26262 compliance.
+    \item Implemented and verified functional safety modules at system level, ensuring AUTOSAR-compliant firmware delivery.
+    \item Reduced RAM footprint and HEX binary size via \textbf{custom linker script optimisation} -- section placement, dead code elimination, load/run address management. (1st Place, BU Hackathon).
+\end{achievements}
+
+% -- Company 3 ---
+\jobrole{Data Patterns (India) Limited}{Chennai}{December 2018 -- September 2022}{Embedded Software Engineer}
+\begin{achievements}
+    \item \textbf{Satellite OBC Bring-up:} Led full-cycle board bring-up and schematic verification for ISRO INS-2TD and Pixxel ANAND On-Board Computers -- power sequencing, JTAG boundary scan, clock verification, and peripheral driver validation on first silicon.
+    \item \textbf{FPGA Bring-up:} Board bring-up and firmware development for Xilinx Zynq UltraScale+ ZU7EV and ZC706 platforms -- FSBL, peripheral integration, Vivado/Vitis toolchain.
+    \item \textbf{Satellite TTC Systems:} Designed and implemented ground station and on-board Telemetry \& Telecommand firmware with high-reliability UART/I2C drivers under strict real-time constraints.
+    \item Engineered bare-metal reaction wheel control drivers for Pixxel LEO satellites.
+    \item \textbf{ISRO Recognition Award:} Accolades from LEO Directors for INS-2TD mission contributions.
+\end{achievements}
+
+%----------------------------------------------------------------------------------------
+%   PROJECTS (GITHUB)
+%----------------------------------------------------------------------------------------
+\resumesection{Technical Projects}
+
+\noindent
+\textbf{ARM Cortex-M RTOS Scheduler} \hfill
+\href{https://github.com/kumar-mohan-s/nano-sched}{github.com/kumar-mohan-s/nano-sched}
+\begin{achievements}
+    \item Priority-based preemptive scheduler for ARM Cortex-M4 -- TCB management, PSP context switching via PendSV, round-robin for equal-priority tasks.
+    \item Implements full context save/restore: hardware exception frame (R0 -- R3, R12, LR, PC, xPSR) plus manual STMDB/LDMIA for callee-saved R4 -- R11.
+\end{achievements}
+
+\noindent
+\textbf{Silicon Enablement Tool (pyOCD)} \hfill
+\href{https://github.com/kumar-mohan-s/pydap-link}{github.com/kumar-mohan-s/pydap-link}
+\begin{achievements}
+    \item Python utility using pyOCD/CMSIS-DAP v2 for automated core detection, ROM table parsing, and Flash programming sequence validation across ARM SoC platforms.
+    \item Foundation of the 800-variant Silicon Enablement Framework deployed at Microchip Technology.
+\end{achievements}
+
+\noindent
+\textbf{Edge ML Inference on ARM Cortex-M7} 
+\hfill \href{https://github.com/kumar-mohan-s/edge-ml-nsnet2-cortex-m7}{github.com/kumar-mohan-s/edge-ml-nsnet2-cortex-m7}
+\begin{achievements}
+    \item Exported NSNET2 speech enhancement model to ONNX and verified inference correctness on host (macOS) with real audio samples.
+    \item Porting to ARM Cortex-M7 (PIC32CZ-CA90) with quantised weight mapping to TCM/SRAM and real-time I2S audio interface -- demonstrates embedded ML deployment on resource-constrained silicon.
+\end{achievements}
+
+% \noindent
+% \textbf{Linux FPGA Register Access Driver} \hfill
+% \href{https://github.com/kumar-mohan-s}{github.com/kumar-mohan-s}
+% \begin{achievements}
+%     \item Linux platform driver for FPGA scratchpad register validation -- devm\_ioremap\_resource, ioread32/iowrite32, sysfs interface, multi-pattern write/readback verification (0xDEADBEEF, 0xA5A5A5A5, alternating bit patterns).
+%     \item Demonstrates AXI bus connectivity proof-of-life methodology applicable to first-silicon bringup validation.
+% \end{achievements}
+
+\noindent
+\textbf{SAMC21 JTAG TAP Controller} \hfill
+\href{https://github.com/kumar-mohan-s/samc21-jtag-tap}
+{github.com/kumar-mohan-s/samc21-jtag-tap}
+\begin{achievements}
+    \item Implemented IEEE 1149.1 JTAG TAP state machine on ARM Cortex-M0+ (SAMC21) using GPIO bit-bang -- reads JTAG IDCODE from target silicon (PIC32CZ-CA90).
+\end{achievements}
+
+\resumesection{Talks \& Presentations}
+
+\noindent
+\textbf{AI Hardware Wars: What Embedded Engineers 
+Need to Know} \hfill 2026 \\
+\textit{[Microchip Software Summit], Bengaluru}
+\begin{achievements}
+    \item Presented competitive landscape of AI compute silicon -- NVIDIA CUDA ecosystem, Google TPU, Graphcore IPU, and Cerebras WSE -- drawing from the landmark ``AI+HW 2035'' paper (LeCun, Young et al.).
+    \item Examined the shift from raw compute to intelligence-per-joule and implications for embedded and firmware engineers at the edge.
+\end{achievements}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+\resumesection{Education}
+\noindent
+\textbf{Bachelor of Engineering (Electronics \& Communication)} \hfill 2014 -- 2018 \\
+\textit{Anna University, Chennai}
+
+\end{document}
