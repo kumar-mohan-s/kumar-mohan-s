@@ -19,7 +19,7 @@
 ### 👋 Hi, I'm Kumar M
 **Senior Embedded Firmware Engineer | Silicon Bring-Up | RTOS | Validation Automation**
 
-7+ years building firmware for mission-critical systems - from **first-silicon bring-up on ISRO satellite OBCs** to **production FreeRTOS firmware** shipped in Microchip's PICkit 5 and ICD 5 debugger tools.
+7+ years building firmware for mission-critical systems - from **first-silicon bring-up on ISRO satellite OBCs** to **production FreeRTOS firmwares..**
 
 I write bare-metal C that runs in orbit, RTOS firmware that ships to engineers worldwide, and Python automation frameworks that scale across hundreds of silicon variants.
 
@@ -31,7 +31,6 @@ I write bare-metal C that runs in orbit, RTOS firmware that ships to engineers w
 |---|---|
 | **ISRO INS-2TD Satellite** | Full-cycle OBC board bring-up - power sequencing, JTAG boundary scan, TTC firmware. ISRO Recognition Award. |
 | **Pixxel ANAND LEO Satellite** | Bare-metal reaction wheel control drivers under real-time constraints |
-| **Microchip PICkit 5 / ICD 5** | Senior firmware developer - FreeRTOS architecture, HAL, BLE integration |
 | **BMW S68T0 ECU (Bosch)** | Safety-critical thermal management firmware, ISO 26262, linker optimisation |
 | **Zynq UltraScale+ ZU7EV** | FPGA bring-up, FSBL, peripheral integration - Vivado/Vitis |
 
